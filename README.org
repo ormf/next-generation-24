@@ -22,6 +22,8 @@
 
      Ein Terminal öffnen, dann:
 
+     =cd ~=
+     
      =git clone https://git@github.com/ormf/next-generation-24=
 
    - Im Terminal die Datei =.cminit.lisp= aus dem Repository in Euer
