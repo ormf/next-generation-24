@@ -1,0 +1,51 @@
+* next-generation-24
+  Materialien für das Lisp Seminar bei Next Generation X am 08.06.2024 im ZKM Karlsruhe
+
+** Dependencies
+
+  - sbcl
+
+  - Quicklisp
+
+  - cm-all samt dependencies
+
+  - inkscape
+
+
+** Install
+
+   - Das Repository in Euer Home Verzeichnis clonen:
+
+     *WICHTIG*: Zuerst sicherstellen, dass in Eurem Home Verzeichnis
+     nicht bereits ein Ordner mit Namen =next-generation-24=
+     existiert, andernfalls diesen erst aus dem Weg räumen.
+
+     Ein Terminal öffnen, dann:
+
+     =git clone https://git@github.com/ormf/next-generation-24=
+
+   - Im Terminal die Datei =.cminit.lisp= aus dem Repository in Euer
+     Home Verzeichnis kopieren (auch das natürlich nur, wenn sich
+     diese Datei nicht bereits in Eurem Home Verzeichnis
+     befindet. Andernfalls siehe oben):
+
+     =cp ~/next-generation-24/.cminit.lisp ~/=
+
+   - Im Terminal die Dateien für den inkscape Player in die Extensions kopieren
+     (Diese Erklärung ist für Linux, evtl. sind die Pfadnamen bei
+     Apple anders):
+
+     =cp ~/next-generation-24/play-selection* ~/.config/inkscape/extensions/
+   
+** Test
+
+   Folgender Lisp Code sollte einen Flötenton
+   auf dem Lautsprecher ausgeben:
+
+   =(ql:quickload :cm-all)=
+
+   =(cm)=
+
+   =(rts)=
+
+   =(sprout (new sfz :time 0 :preset :flute-nv))=
