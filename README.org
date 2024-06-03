@@ -33,6 +33,13 @@
 
      =cp ~/next-generation-24/.cminit.lisp ~/=
 
+*** Inkscape Play Selection installieren (optional)
+
+    - Systemweit muss "pythonosc" installiert sein.  Unter arch Linux
+      erreicht man dies durch die folgende Eingabe im Terminal:
+
+      =sudo pacman -S python-osc=
+    
    - Im Terminal die Dateien für den inkscape Player in die Extensions kopieren
      (Diese Erklärung ist für Linux, evtl. sind die Pfadnamen bei
      Apple anders):

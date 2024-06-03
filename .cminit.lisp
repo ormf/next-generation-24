@@ -11,5 +11,5 @@
           :yamaha-grand-piano "yamaha-grand-piano.sfz")))
   (loop for (sym fname) on sfz-assoc by #'cddr
         do (progn
-             (format t "~&registering ~S at ~S~%" sym fname)
+;;;             (format t "~&registering ~S at ~S~%" sym fname)
              (setf (gethash sym *sfz-preset-lookup*) fname))))
