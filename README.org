@@ -37,7 +37,7 @@
      (Diese Erklärung ist für Linux, evtl. sind die Pfadnamen bei
      Apple anders):
 
-     =cp ~/next-generation-24/play-selection* ~/.config/inkscape/extensions/
+     =cp ~/next-generation-24/play-selection* ~/.config/inkscape/extensions/=
    
 ** Test
 
